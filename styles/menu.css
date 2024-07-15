@@ -1,0 +1,16 @@
+.talent-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F7FBFF;
+    height: auto;
+    z-index: 999;
+}
+.talent-banner{
+    display: flex;
+    width: 1240px;
+    justify-content: space-between;
+    align-items: center;
+    color: #232323;
+    position: relative;
+}    

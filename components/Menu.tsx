@@ -128,7 +128,9 @@ const Menu = () => {
 
                     <div >
                             <>
-                                <button onClick={handleLogout}>Login</button>
+                            <Link href="/signup">
+                                <button  onClick={handleLogout}>Login/Signup</button>
+                                </Link>
                             </>
                         
                     </div>

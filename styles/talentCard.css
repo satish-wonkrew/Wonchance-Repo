@@ -1,0 +1,141 @@
+
+.talent-archive{
+background-color:#d9d9d9;
+display: grid;
+grid-template-columns: 1fr 4fr;
+}
+/* Filters */
+.filters{
+  background-color:#8F8F8F;
+  padding: 10px 10px 0px 10px;
+}
+.filters h1{
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  margin-left: 1%;
+}
+.talent-filter{
+  color: #fff;
+}
+.filter-label{
+  font-size: 16px;
+  color: #fff;
+  display: block;
+}
+.filter-search{
+  border: 1px solid #fff;
+  border-radius: 3px;
+  height: 30px;
+  padding-left: 10px;
+  color: #000;
+  background-color: #d9d9d9;
+}
+.talent-select{
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 5px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #d9d9d9;
+}
+
+/* Cards */
+.talents{
+  padding: 10px 0px 0px 10px;
+  }
+.talents h1{
+   font-size: 28px;
+   font-weight: 800;
+   margin-left: 1%;
+   margin-left: 60px;
+  }
+.card-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 10px;
+  
+}
+/* Right Side Grid */
+.profile-picture{
+  width:100%;
+  height: 500px;
+  z-index: 0;
+  margin-left: 50px;
+  border-radius: 1px;
+}
+.talent-short-data{
+  padding:1px 0px 10px 0px;
+  background: linear-gradient(to bottom, #D4D4D4 40%, #5A5A5A 100%);
+  color: white;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  gap: 10px;
+  z-index: 1;
+  border-radius: 50px 1px 1px 50px;
+  border: 1px solid #000;
+}
+.talent-screen-name{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  text-transform: capitalize;
+  font-size: 32px;
+  font-weight: 800;
+}
+.talent-id-status{
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+.talent-over-view{
+  background-color:#8F8F8F;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.talent-over-view h2{
+  font-size: 24px;
+  font-weight: 800;
+  margin-left: 20px;
+}
+.h2{
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+.talent-appearance h2{
+  font-size: 28px;
+  font-weight: 800;
+  margin-left: 20px;
+}
+.talent-button{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.contact-us{
+  border:1px solid #000;
+  border-radius: 3px;
+  background-color:#000 ;
+  font-size: 12px;
+  width: 120px;
+  height: 32px;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.view-profile{
+  border:1px solid #5A5A5A;
+  border-radius: 3px;
+  background-color:#5A5A5A ;
+  font-size: 12px;
+  width: 120px;
+  height: 32px;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 20px;
+}

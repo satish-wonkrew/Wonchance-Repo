@@ -1,0 +1,200 @@
+.talent-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    background-color: #D9D9D9;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+/* Talent Grid One */
+.talent-grid-one{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.talent-profile-image{
+    width: 100%;
+    height:auto;
+}
+/* Talent Grid Two */
+.talent-grid-two{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+.screen-name {
+    display: flex; 
+    text-align: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+   
+}
+.screen-name h1{
+    font-size: 32px;
+    font-weight: 800;
+}
+.screen-name h3{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.talent-id{
+    display: flex; 
+    text-align: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.talent-name{
+    background-color:#6C6DB2;
+    height: 40px;
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-between;
+    text-transform: capitalize;
+    align-items: center;
+    border-radius: 5px;
+}
+.talent-name h2{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.talent-details-heading{
+    font-size: 24px;
+    font-weight: 700;
+}
+.talent-social{
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+}
+/* Basic */
+.talent-basic{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    border: 1px solid #6C6DB2;
+    background-color: #6C6DB2;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5%;
+   
+}
+.talent-basic h3{
+    font-size: 18px;
+    font-weight:600; 
+}
+.talent-basic span{
+    font-size: 16px;
+    font-weight:400;
+}
+.talent-basic li{
+    font-size: 18px;
+    font-weight:400;
+}
+/* Physical */
+.talent-physical{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #6C6DB2;
+    background-color: #6C6DB2;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5%;
+}
+.talent-physical  h3{
+    font-size: 18px;
+    font-weight:600;
+}
+.talent-physical span{
+    font-size: 16px;
+    font-weight:400;
+}
+/* Work */
+.talent-work{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #6C6DB2;
+    background-color: #6C6DB2;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5%;
+}
+.talent-work h3{
+    font-size: 18px;
+    font-weight:600;
+}
+.talent-work span{
+    font-size: 16px;
+    font-weight:400;
+}
+
+/* Skill */
+.talent-skill{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #6C6DB2;
+    background-color: #6C6DB2;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5%;
+}
+.talent-skill h3{
+    font-size: 18px;
+    font-weight:600;
+}
+.talent-skill ul{
+    font-size: 16px;
+    font-weight:400;
+}
+
+/*Talent Interested */
+.talent-interested{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #6C6DB2;
+    background-color: #6C6DB2;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5%;
+}
+.talent-interested h3{
+    font-size: 18px;
+    font-weight:600;
+}
+.talent-interested ul{
+    font-size: 16px;
+    font-weight:400;
+}
+
+/* Gallery */
+.talent-gallery {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .talent-gallery li {
+    margin: 5px;
+  }
+  
+  .talent-gallery-image {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .talent-gallery-image:hover {
+    transform: scale(1.05);
+  }
+  

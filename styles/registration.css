@@ -1,0 +1,82 @@
+.registration{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 5%;
+}
+/* Register Left */
+.register-left{
+    background:#fff;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 0px 0px 10px;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 25px;
+}
+
+/* Register Right */
+.register-right{
+    background: rgba(255, 255, 255, 0.2); /* White with some transparency */
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 25px 30px 25px 30px;
+    display: inline;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.head-titles{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #111827;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.basic-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.basic-details h2{
+    grid-column: span 2;
+}
+.register-profile-picture{
+    display: block;
+    background-color: #fff;
+    width: 100px;
+    padding: 2px;
+    border: 3px solid #22c55e;
+}
+.register-profile-gallery{
+    display: block;
+    background-color: red;
+    background-color: #fff;
+    padding: 2px;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #22c55e;
+}
+.register-label{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    display: block;
+  }
+
+.register-input{
+    width: 70%;
+    font-weight:400;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(184, 57, 57, 0.233);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #000;
+}
+.register-multi-select{
+    width: 70%;
+    padding: 10px;
+}

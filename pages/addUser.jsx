@@ -42,7 +42,7 @@ const AddUser = () => {
     if (email) {
       checkForDuplicates('email', email);
     }
-  }, [whatsappNumber, email]);
+  }, [whatsappNumber, email, checkForDuplicates]);
 
 
   const createUserHandler = async () => {

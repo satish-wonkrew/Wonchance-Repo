@@ -1,8 +1,8 @@
 // components/Header.tsx
 import React, { useEffect } from 'react';
-import Link from 'next/link';
 import { useSession, signOut } from 'next-auth/react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import Image from 'next/image';
 import WonchanceLogo from '../images/WonchanceLogo.png';
 
@@ -92,25 +92,25 @@ const Menu = () => {
                     <nav className="nav" id="nav">
                         <button className="close-btn" id="close-btn">×</button>
                         <ul className="menu">
-                            <li><a href="/">Home</a></li>
+                            <li><Link href="/">Home</Link></li>
                             <li className="dropdown">
-                                <a href="/talents" className="dropdown-toggle">Talents <span className="arrow-down">▼</span></a>
+                                <Link href="/talents" className="dropdown-toggle">Talents <span className="arrow-down">▼</span></Link>
                                 <ul className="dropdown-menu">
-                                    <li><a href="/pendingTalent">Pending Talents</a></li>
-                                    <li><a href="/newCompany">Create Company</a></li>
-                                    <li><a href="/newProject">Create Project</a></li>
-                                    <li><a href="/newRole">Create Role</a></li>
-                                    <li><a href="/newCastingCall">Create CastingCalls</a></li>
+                                    <li><Link href="/pendingTalent">Pending Talents</Link></li>
+                                    <li><Link href="/newCompany">Create Company</Link></li>
+                                    <li><Link href="/newProject">Create Project</Link></li>
+                                    <li><Link href="/newRole">Create Role</Link></li>
+                                    <li><Link href="/newCastingCall">Create CastingCalls</Link></li>
                                 </ul>
                             </li>
-                            <li><a href="/addUser">Add User</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                            <li><Link href="/addUser">Add User</Link></li>
+                            <li><Link href="/contact">Contact</Link></li>
                         </ul>
                     </nav>
                     <div className="profile-view">
                             <>
                                 <button onClick={handleLogout}>Logout</button>
-                                <img src="profile.jpg" alt="Profile Image" className="profile-img" />
+                                <Image src="profile.jpg" alt="Profile Image" className="profile-img" />
                             </>
                         
                     </div>
@@ -120,9 +120,9 @@ const Menu = () => {
                          <nav className="nav" id="nav">
                         <button className="close-btn" id="close-btn">×</button>
                         <ul className="menu">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/info">Info</a></li>
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="/about">About</Link></li>
+                            <li><Link href="/info">Info</Link></li>
                         </ul>
                     </nav>
 

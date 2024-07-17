@@ -1,7 +1,7 @@
 // TalentSingle.js
 import React, { useState } from "react";
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
+// import Lightbox from 'react-image-lightbox';
+// import 'react-image-lightbox/style.css';
 import { useSession } from 'next-auth/react';
 import Image from 'next/image';
 
@@ -38,7 +38,7 @@ const ProfileGallery = () => {
                 ))}
             </ul>
 
-            {isOpen && (
+            {/* {isOpen && (
                 <Lightbox
                     mainSrc={session.user.gallery[photoIndex]}
                     nextSrc={session.user.gallery[(photoIndex + 1) % session.user.gallery.length]}
@@ -57,7 +57,7 @@ const ProfileGallery = () => {
                         setPhotoIndex((photoIndex + 1) % session.user.gallery.length)
                     }
                 />
-            )}
+            )} */}
         </div>
         </div>
     );

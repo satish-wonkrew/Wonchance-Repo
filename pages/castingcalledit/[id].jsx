@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import { useSession } from 'next-auth/react';
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import { useSession } from "next-auth/react";
 
 const TalentEdit = () => {
   const { data: session } = useSession();
@@ -18,23 +18,24 @@ const TalentEdit = () => {
         ...prevData,
         createrId: session.user.id,
       }));
+
+      const checkIfAlreadyApplied = async () => {
+        if (id) {
+          try {
+            const response = await fetch(`/api/castings/${id}`);
+            const data = await response.json();
+            if (data.appliedTalentsId.includes(session.user.id)) {
+              setAlreadyApplied(true);
+            }
+          } catch (error) {
+            console.error("Error fetching casting details:", error);
+          }
+        }
+      };
+
       checkIfAlreadyApplied();
     }
   }, [session, id]);
-
-  const checkIfAlreadyApplied = async () => {
-    if (id) {
-      try {
-        const response = await fetch(`/api/castings/${id}`);
-        const data = await response.json();
-        if (data.appliedTalentsId.includes(session.user.id)) {
-          setAlreadyApplied(true);
-        }
-      } catch (error) {
-        console.error('Error fetching casting details:', error);
-      }
-    }
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -44,19 +45,19 @@ const TalentEdit = () => {
         appliedTalentsId: [...formData.appliedTalentsId, session.user.id],
       };
       const response = await fetch(`/api/addcasting/${id}`, {
-        method: 'PUT',
+        method: "PUT",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(updatedFormData),
       });
       const data = await response.json();
       if (!response.ok) {
-        throw new Error(data.message || 'Error updating user');
+        throw new Error(data.message || "Error updating user");
       }
-      router.push('/talents'); // Redirect to talents page after update
+      router.push("/talents"); // Redirect to talents page after update
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
     }
   };
 

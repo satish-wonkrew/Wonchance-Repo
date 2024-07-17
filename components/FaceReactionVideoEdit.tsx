@@ -63,7 +63,7 @@ const FaceReactionVideoEdit = () => {
   const handleStopCaptureClick = useCallback(async () => {
     mediaRecorderRef.current!.stop();
     setCapturing(false);
-  }, [mediaRecorderRef, webcamRef]);
+  }, [mediaRecorderRef]);
 
   useEffect(() => {
     const handleSave = async () => {

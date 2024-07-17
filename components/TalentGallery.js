@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css';
+// import Lightbox from 'react-image-lightbox';
+// import 'react-image-lightbox/style.css';
 import ReactPlayer from 'react-player';
 import Image from 'next/image';
 
@@ -72,7 +72,7 @@ const TalentGallery = () => {
         ))}
     </ul>
 
-    {isOpen && (
+    {/* {isOpen && (
       <Lightbox
         mainSrc={talent.gallery[photoIndex]}
         nextSrc={talent.gallery[(photoIndex + 1) % talent.gallery.length]}
@@ -91,7 +91,7 @@ const TalentGallery = () => {
           setPhotoIndex((photoIndex + 1) % talent.gallery.length)
         }
       />
-    )}
+    )} */}
   </div>
   {/* 2nd Gallery */}
   <div>
@@ -112,7 +112,7 @@ const TalentGallery = () => {
         ))}
     </ul>
 
-    {isOpen && (
+    {/* {isOpen && (
       <Lightbox
         mainSrc={talent.facePicGallery[photoIndex]}
         nextSrc={talent.facePicGallery[(photoIndex + 1) % talent.facePicGallery.length]}
@@ -131,7 +131,7 @@ const TalentGallery = () => {
           setPhotoIndex((photoIndex + 1) % talent.facePicGallery.length)
         }
       />
-    )}
+    )} */}
   </div>
   {/* Video Gallery */}
   <div>

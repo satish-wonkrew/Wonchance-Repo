@@ -2,7 +2,7 @@
 import dbConnect from '../../lib/dbConnect';
 import User from '../../models/User'; // Assuming you have a Talent model
 
-export default async (req, res) => {
+async function handleProfileView(req, res) {
   await dbConnect();
 
   const { talentId, viewerId } = req.body;
@@ -22,4 +22,6 @@ export default async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: 'An error occurred' });
   }
-};
+}
+
+export default handleProfileView;

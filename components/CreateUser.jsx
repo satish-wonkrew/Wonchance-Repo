@@ -37,14 +37,14 @@ const AddUser = () => {
     if (phoneNumber) {
       checkForDuplicates('whatsappNumber', whatsappNumber);
     }
-  }, [whatsappNumber]);
+  }, [phoneNumber, whatsappNumber, checkForDuplicates]); // Add checkForDuplicates
 
   // Effect to check email
   useEffect(() => {
     if (email) {
       checkForDuplicates('email', email);
     }
-  }, [email]);
+  }, [email, checkForDuplicates]);
 
   const createUserHandler = async () => {
     if (errors.whatsappNumber || errors.email) {
